@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Aufgabe</title>
+</head>
+
+<body>
+
+    <h1>Neue Lehrveranstaltung erfassen:</h1>
+    <form action="eingabeformular.php" method="get"><br>
+        <p>
+            <strong>Name der LV: </strong><input type="text" name="lv" placeholder="Lehrveranstaltung eingeben"
+                size="20">
+            <br><br>
+            <strong>Typ: </strong><br><br> <select name="typ" size="1" required>
+                <option>Seminaristischer Unterricht (SU)</option>
+                <option>Pflichtfach (P)</option>
+                <option>&Uuml;bung (&Uuml;)</option>
+            </select><br><br>
+            <strong>Dozent*in: </strong><br><br> <select name="dozent" size="1" required>
+                <option>Prof. Dr. F. Fuchs-Kittowski</option>
+                <option>Dr. J&ouml;rg Pohle</option>
+            </select><br><br>
+            <strong>Semester: </strong><br><br> <select name="semester" size="1" required>
+                <option>Sommer 2020</option>
+                <option>Winter 2020</option>
+                <option>Sommer 2021</option>
+                <option>Winter 2021</option>
+            </select><br><br>
+            <strong>SWS: </strong><br><br> <select name="sws" size="1" required>
+                <option>4 SWS</option>
+                <option>3 SWS</option>
+                <option>2 SWS</option>
+            </select><br><br>
+            <input type="submit" value="Eintragen">
+        </p>
+    </form>
+</body>
+
+</html>
